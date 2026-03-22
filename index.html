@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -5,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Solar Calculator — JP Transformer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --sun: #EF9F27;
@@ -65,22 +66,26 @@
 
   /* Header */
   .brand {
-    display: flex; align-items: center; gap: 10px;
+    display: flex; align-items: center; gap: 14px;
     margin-bottom: 48px;
   }
   .brand-icon {
-    width: 36px; height: 36px; border-radius: 8px;
-    background: var(--sun); display: flex; align-items: center;
-    justify-content: center;
+    width: 52px; height: 52px; border-radius: 12px;
+    background: var(--sun);
+    box-shadow: 0 0 24px rgba(239,159,39,0.45), 0 0 8px rgba(239,159,39,0.3);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
   }
-  .brand-icon svg { width: 20px; height: 20px; }
+  .brand-icon svg { width: 28px; height: 28px; }
   .brand-name {
-    font-family: 'Syne', sans-serif;
-    font-size: 16px; font-weight: 700;
-    color: #fff; letter-spacing: -0.3px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 38px; font-weight: 400;
+    color: #fff; letter-spacing: 3px; line-height: 1;
+    text-shadow: 0 0 40px rgba(239,159,39,0.25);
   }
+  .brand-name span { color: var(--sun); }
   .brand-tag {
-    font-size: 11px; color: var(--muted); margin-top: 1px;
+    font-size: 11px; color: var(--muted); margin-top: 4px; letter-spacing: 0.5px;
   }
 
   /* Hero */
@@ -272,6 +277,16 @@
     text-decoration: none; transition: border-color .2s;
   }
   .cta-insta:hover { border-color: var(--sun); }
+  .cta-phone {
+    display: inline-flex; align-items: center; gap: 8px;
+    margin-top: 10px;
+    background: var(--card2); border: 1px solid var(--border);
+    border-radius: 10px; padding: 10px 18px;
+    font-family: 'Syne', sans-serif;
+    font-size: 14px; font-weight: 600; color: var(--green-light);
+    text-decoration: none; transition: border-color .2s;
+  }
+  .cta-phone:hover { border-color: var(--green); }
 
   /* Footer */
   .footer {
@@ -321,7 +336,7 @@
       </svg>
     </div>
     <div>
-      <div class="brand-name">JP Transformer</div>
+      <div class="brand-name"><span>JP</span> Transformer</div>
       <div class="brand-tag">Solar Solutions — Haryana, India</div>
     </div>
   </div>
@@ -386,9 +401,14 @@
   <div class="cta-card">
     <h3>Expert se baat karo</h3>
     <p>System size pata chal gayi? Ab sahi installation ke liye JP Transformer se sampark karo. Instagram pe follow karo — daily solar tips + personal replies.</p>
-    <a class="cta-insta" href="https://instagram.com/JPTransformer" target="_blank">
+    <a class="cta-insta" href="https://www.instagram.com/jp_transfermer?igsh=MWVzdGY4bXZreXZ5cQ%3D%3D&utm_source=qr" target="_blank">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-      @JPTransformer
+      @jp_transfermer
+    </a>
+    <br>
+    <a class="cta-phone" href="tel:+919255141515">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      +91 92551 41515
     </a>
   </div>
 
